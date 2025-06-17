@@ -4,6 +4,8 @@ jobs:
   set-up-ubuntu:
     runs-on: ubuntu-latest
     steps: 
+      - name: clone repo in runner
+        run: actions/checkout@v4
       - name: print statement
         run: echo "hello world."
       - name: get java version
