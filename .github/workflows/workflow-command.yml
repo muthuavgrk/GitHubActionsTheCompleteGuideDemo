@@ -15,7 +15,7 @@ jobs:
       - name: setting notice message with param
         run: echo "::notice title=error title, file=app.js, line=2::missing semicolon"
       - name: add mask to variable
-        run: "::add-mask::secretstring"
+        run: echo "::add-mask::secretstring"
       - name: print secret variable
         run: echo "secretstring."
         
