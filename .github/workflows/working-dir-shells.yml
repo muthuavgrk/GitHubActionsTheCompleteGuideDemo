@@ -8,9 +8,9 @@ jobs:
         run: |
           pwd
           ls -lrt
-          echo $github_sha
-          echo $github_repository
-          echo $github_workspace
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
   display-wd-info-window:
     runs-on: windows-latest
     steps: 
@@ -18,6 +18,6 @@ jobs:
         run: |
           pwd
           ls -lrt
-          echo $github_sha
-          echo $github_repository
-          echo $github_workspace
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
