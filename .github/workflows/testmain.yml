@@ -1,0 +1,8 @@
+name: git-hub-actions-test
+on: [push]
+jobs:
+  set-up-ubuntu:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: print statement
+        run: echo "hello world."
