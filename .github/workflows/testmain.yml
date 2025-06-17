@@ -3,16 +3,11 @@ on: [push]
 jobs:
   set-up-ubuntu:
     runs-on: ubuntu-latest
-    steps: 
-      - name: clone repo in runner
-        run: actions/checkout@v4
+    steps:       
       - name: print statement
         run: echo "hello world."
       - name: get java version
         run: java -version
       - name: get maven version
         run: mvn -version
-      - name: compile java class
-        run: javac Test.java
-      - name: run java
-        run: java Test
+      
