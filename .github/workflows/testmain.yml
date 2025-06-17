@@ -10,4 +10,9 @@ jobs:
         run: java -version
       - name: get maven version
         run: mvn -version
-      
+  dependent-job:
+    runs-on: windows-latest
+    needs: set-up-ubuntu
+    steps: 
+      - name: write string
+        run: Write-Output "printing in powershell."
