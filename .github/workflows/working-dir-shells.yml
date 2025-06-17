@@ -1,0 +1,23 @@
+name: working-dir-shells
+on: [push]
+jobs: 
+  display-wd-info:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: display working dir
+        run: |
+          pwd
+          ls -lrt
+          echo $github_sha
+          echo $github_repository
+          echo $github_workspace
+  display-wd-info-window:
+    runs-on: windows-latest
+    steps: 
+      - name: display working dir and files in windows
+        run: |
+          pwd
+          ls -lrt
+          echo $github_sha
+          echo $github_repository
+          echo $github_workspace
