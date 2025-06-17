@@ -1,0 +1,10 @@
+name: workflow-command
+on: [push]
+jobs:
+  error-printing:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: setting error message
+        run: echo "::error::missing semicolon;"
+  
+  
